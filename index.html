@@ -15,20 +15,11 @@
             <h1 :class="settingTitle">{{titolo}}</h1>
         </div>
         <form @submit.prevent="createElement">
-            <p>Clicca per generare il main</p>
-            <button type="submit">Genera</button>
+            <p :class="settingText">{{text}}</p>
+            <button type="submit" :class="settingBtn">Genera</button>
         </form>
         <div :class="settingMain" data-generate>
-            <!-- <div>
-                <img :class="settingImage" :src="image" alt="">
-
-            </div>
-            <div>
-                <img :class="settingImage" :src="image" alt="">
-            </div>
-            <div>
-                <img :class="settingImage" :src="image" alt="">
-            </div> -->
+            
         </div>
     </div>
 
